@@ -8,7 +8,7 @@ class GUICar:
         self.car = car
 
         self.master.title ("Car GUI")
-        self.master.geometry ("200x200")
+        self.master.geometry ("300x150")
         self.master.config(bg="#f0f0f0") #background color
 
         #label for speed
