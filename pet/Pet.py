@@ -40,3 +40,5 @@ class Pet: #class representing pet
                 raise ValueError ("Animal type should be a string")
         except ValueError as e:
             print(e)
+    
+    def set_age (self, age):
