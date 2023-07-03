@@ -42,3 +42,6 @@ class Pet: #class representing pet
             print(e)
     
     def set_age (self, age):
+        try: 
+            #Convert input to an integer
+            age = int(age)
