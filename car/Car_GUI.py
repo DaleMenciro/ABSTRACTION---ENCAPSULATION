@@ -16,7 +16,11 @@ class GUICar:
             self.master, text = "Current Speed: 0", font=("Arial", 16), bg="#f0f0f0"
         )
         self.speed_label.pack(pady=20)
+        
         #frame for buttons
+        self.button_frames = tk.Frame(self.master,bg="#f0f0f0")
+        self.button_frames.pack()
+        
         #acceleration button
         #brake button
 
