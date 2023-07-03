@@ -28,3 +28,7 @@ class Car:
     def brake (self):
         #decrease speed by 5
         self.__speed -= 5
+
+    def get_speed (self):
+        #return the current speed
+        return self.__speed
