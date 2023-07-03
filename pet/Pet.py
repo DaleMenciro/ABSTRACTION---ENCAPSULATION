@@ -21,3 +21,5 @@ class Pet: #class representing pet
         self __animal_type = ""
         self _age = 0
 
+    def set_name (self, name):
+        
