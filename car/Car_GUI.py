@@ -11,3 +11,7 @@ class GUICar:
         self.master.geometry ("300x200")
         self.master.config(bg="#f0f0f0") #background color
 
+
+root = tk.Tk()
+car_gui = GUICar(root, Car)
+root.mainloop()
