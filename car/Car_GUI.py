@@ -11,6 +11,10 @@ class GUICar:
         self.master.geometry ("300x200")
         self.master.config(bg="#f0f0f0") #background color
 
+        #label for speed
+        #frame for buttons
+        #acceleration button
+        #brake button
 
 root = tk.Tk()
 car_gui = GUICar(root, Car)
