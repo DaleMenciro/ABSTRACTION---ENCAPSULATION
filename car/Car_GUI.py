@@ -31,10 +31,19 @@ class GUICar:
             activebackground="#4caf50",
             activeforeground= "white",
         )
-        self.acceleration_button.grid(row = 0, column= 0, padx = 0)
+        self.acceleration_button.grid(row = 0, column= 0, padx = 10)
 
         #brake button
-
+        self.brake_button = tk.Button(
+            self.button_frame,
+            text= "Brake",
+            font= ("Arial", 12),
+            bg = "#ef5350",
+            fg = "white"
+            activebackground= "#e53935",
+            activeforeground= "white",
+        )
+        self.brake_button.grid(row= 0, column= 1, padx= 10)
 root = tk.Tk()
 car_gui = GUICar(root, Car)
 root.mainloop()
