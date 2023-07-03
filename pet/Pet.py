@@ -54,3 +54,6 @@ class Pet: #class representing pet
             print(e)
 
     def get_name(self):
+        return self.__name
+    
+    
