@@ -20,3 +20,7 @@ class Car:
         self.__year_model = year_model
         self.__make = make
         self.__speed = 0 #Start with an initial speed of 0
+
+    def accelerate (self):
+        #increase speed by 5
+        self.__speed += 5
