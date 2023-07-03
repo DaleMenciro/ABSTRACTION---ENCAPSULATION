@@ -12,6 +12,9 @@ class GUICar:
         self.master.config(bg="#f0f0f0") #background color
 
         #label for speed
+        self.speed_label = tk.Label(
+            self.master, text = "Current Speed: 0", font=("Arial", 16) bg="#f0f0f0"
+        )
         #frame for buttons
         #acceleration button
         #brake button
