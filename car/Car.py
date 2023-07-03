@@ -15,3 +15,8 @@ class Car:
     get_speed()
     
     '''
+    def __init__(self, year_model,make):
+        #Initialize the Car objects 
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0 #Start with an initial speed of 0
