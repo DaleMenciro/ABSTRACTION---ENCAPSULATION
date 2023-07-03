@@ -51,6 +51,9 @@ class GUICar:
             self.speed_label.configure(text=f"Current Speed: {speed}")
 
         def accelerate(self):
+            # Call the car's accelerate method and update the speed label
+            self.car.accelerate()
+            self.update_speed_label()
 
         def brake(self):
 
