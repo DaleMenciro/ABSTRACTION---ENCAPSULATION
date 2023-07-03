@@ -56,6 +56,9 @@ class GUICar:
             self.update_speed_label()
 
         def brake(self):
+            # Call the car's brake method and update the speed label
+            self.car.brake()
+            self.update_speed_label()
 
 
 root = tk.Tk()
