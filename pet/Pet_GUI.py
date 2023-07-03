@@ -21,6 +21,10 @@ class PetGUI:
         self.name_entry.pack(pady=5)
 
         #animal type label
+        self.animal_type_label = tk.Label(
+            self.master, text="Animal Type:", font=("Arial", 12), bg="#f0f0f0"
+        )
+        self.animal_type_label.pack()
 
         #animal type entry
 
