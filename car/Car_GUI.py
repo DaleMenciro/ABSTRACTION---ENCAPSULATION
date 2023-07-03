@@ -39,7 +39,7 @@ class GUICar:
             text= "Brake",
             font= ("Arial", 12),
             bg = "#ef5350",
-            fg = "white"
+            fg = "white",
             activebackground= "#e53935",
             activeforeground= "white",
         )
