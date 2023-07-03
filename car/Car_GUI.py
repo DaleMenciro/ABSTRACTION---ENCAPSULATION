@@ -47,22 +47,24 @@ class GUICar:
         )
         self.brake_button.grid(row= 0, column= 1, padx= 10)
 
-        def update_speed_label(self):
-            # Update the speed label with the current speed
-            speed = self.car.get_speed()
-            self.speed_label.configure(text=f"Current Speed: {speed}")
+    def update_speed_label(self):
+        # Update the speed label with the current speed
+        speed = self.car.get_speed()
+        self.speed_label.configure(text=f"Current Speed: {speed}")
 
-        def accelerate(self):
-            # Call the car's accelerate method and update the speed label
-            self.car.accelerate()
-            self.update_speed_label()
+    def accelerate(self):
+        # Call the car's accelerate method and update the speed label
+        self.car.accelerate()
+        self.update_speed_label()
 
-        def brake(self):
-            # Call the car's brake method and update the speed label
-            self.car.brake()
-            self.update_speed_label()
+    def brake(self):
+        # Call the car's brake method and update the speed label
+        self.car.brake()
+        self.update_speed_label()
 
 
-root = tk.Tk()
-car_gui = GUICar(root, Car)
-root.mainloop()
+def create_gui(car):
+    # Create the main Tkinter window and the CarGUI object
+    root = tk.Tk()
+    gui = GUICar(root, car)
+    root.mainloop()
