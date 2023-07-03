@@ -30,7 +30,6 @@ class GUICar:
             fg = "white",
             activebackground="#4caf50",
             activeforeground= "white",
-            command= self.accelerate,
         )
         self.acceleration_button.grid(row = 0, column= 0, padx = 0)
 
