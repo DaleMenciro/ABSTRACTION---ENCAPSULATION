@@ -18,8 +18,8 @@ class GUICar:
         self.speed_label.pack(pady=20)
         
         #frame for buttons
-        self.button_frames = tk.Frame(self.master,bg="#f0f0f0")
-        self.button_frames.pack()
+        self.button_frame = tk.Frame(self.master,bg="#f0f0f0")
+        self.button_frame.pack()
 
         #acceleration button
         self.acceleration_button = tk.Button(
