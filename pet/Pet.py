@@ -13,7 +13,11 @@ class Pet: #class representing pet
         get_name() - returns the value of the __name field
         get_animal_type() - returns the value of the __animal_type field
         get_age() - returns the value of the __age field
-        
+
     '''
-    
+    def __init__ (self):
+        #initializing attributes
+        self __name= ""
+        self __animal_type = ""
+        self _age = 0
 
