@@ -32,3 +32,11 @@ class Pet: #class representing pet
             print(e)
     
     def set_animal_type(self, animal_type):
+        try:
+            #check if the input is string
+            if isinstance(animal_type, str):
+                self.__animal_type = animal_type
+            else:
+                raise ValueError ("Animal type should be a string")
+        except ValueError as e:
+            print(e)
