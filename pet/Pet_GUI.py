@@ -19,3 +19,13 @@ class PetGUI:
         #name entry
         self.name_entry = tk.Entry(self.master, font=("Arial", 12))
         self.name_entry.pack(pady=5)
+
+        #animal type label
+
+        #animal type entry
+
+        #age label
+
+        #age entry
+
+        #submit button
