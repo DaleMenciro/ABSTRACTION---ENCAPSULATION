@@ -57,3 +57,4 @@ class Pet: #class representing pet
         return self.__name
     
     def get_animal_type(self):
+        return self.__animal_type
