@@ -9,3 +9,9 @@ class PetGUI:
         self.master.title("Pet GUI")
         self.master.geometry("300x200")
         self.master.config(bg="#f0f0f0")
+
+        #name label
+        self.name_label = tk.Label(
+            self.master, text = "Name" , font=("Arial", 12), bg="#f0f0f0"
+        )
+        self.name_label.pack()
