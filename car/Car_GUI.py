@@ -44,6 +44,14 @@ class GUICar:
             activeforeground= "white",
         )
         self.brake_button.grid(row= 0, column= 1, padx= 10)
+
+        def update_speed_label(self):
+
+        def accelerate(self):
+
+        def brake(self):
+
+
 root = tk.Tk()
 car_gui = GUICar(root, Car)
 root.mainloop()
