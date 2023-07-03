@@ -52,3 +52,5 @@ class Pet: #class representing pet
                 raise ValueError ("Age should be a non negative integer")
         except ValueError as e:
             print(e)
+
+    def get_name(self):
