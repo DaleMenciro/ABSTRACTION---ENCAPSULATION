@@ -22,4 +22,12 @@ class Pet: #class representing pet
         self _age = 0
 
     def set_name (self, name):
-        
+        try:
+            #check if the input is string
+            if isinstance(name, str):
+                self.__name = name
+            else:
+                raise ValueError ("Name should be a string")
+        except ValueError as e:
+            print(e)
+            
