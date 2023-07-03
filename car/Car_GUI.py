@@ -46,6 +46,9 @@ class GUICar:
         self.brake_button.grid(row= 0, column= 1, padx= 10)
 
         def update_speed_label(self):
+            # Update the speed label with the current speed
+            speed = self.car.get_speed()
+            self.speed_label.configure(text=f"Current Speed: {speed}")
 
         def accelerate(self):
 
