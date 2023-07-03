@@ -45,3 +45,8 @@ class Pet: #class representing pet
         try: 
             #Convert input to an integer
             age = int(age)
+            #check if input is a non-negative integer
+            if age >= 0:
+                self.__age = age
+            else:
+                raise ValueError ("Age should be a non negative integer")
