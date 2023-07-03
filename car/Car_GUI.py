@@ -1,4 +1,5 @@
 import tkinter as tk
+from Car import Car
 
 class GUICar:
     #initializing GUICar object with master window and car object
