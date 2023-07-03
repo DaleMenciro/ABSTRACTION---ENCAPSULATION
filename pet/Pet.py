@@ -50,3 +50,5 @@ class Pet: #class representing pet
                 self.__age = age
             else:
                 raise ValueError ("Age should be a non negative integer")
+        except ValueError as e:
+            print(e)
