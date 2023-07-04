@@ -51,3 +51,7 @@ class PetGUI:
             activeforeground= "white"
         )
         self.submit_button.pack(pady= 10)
+
+        def submit(self):
+
+        def show_info(self):
