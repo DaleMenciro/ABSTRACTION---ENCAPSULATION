@@ -60,9 +60,13 @@ class PetGUI:
 
             try:
                 #Set pet's attributes
+                self.pet.set_name(name)
+                self.pet.set_animal_type(animal_type)
+                self.pet.set.age(age)
 
                 #Display pet's information
 
                 #Display error message for invalid input
+            except:
 
         def show_info(self):
