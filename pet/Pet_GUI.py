@@ -31,6 +31,10 @@ class PetGUI:
         self.animal_type_entry.pack(pady=5)
         
         #age label
+        self.age_label = tk.Label(
+            self.master, text="Age:", font=("Arial", 12), bg="#f0f0f0"
+        )
+        self.age_label.pack()
 
         #age entry
 
