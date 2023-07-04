@@ -50,4 +50,4 @@ class PetGUI:
             activebackground= "#4caf50",
             activeforeground= "white"
         )
-        
+        self.submit_button.pack(pady= 10)
