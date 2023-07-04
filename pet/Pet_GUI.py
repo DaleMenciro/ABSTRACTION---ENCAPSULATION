@@ -63,7 +63,10 @@ class PetGUI:
         if not name or not animal_type or not age:
             messagebox.showerror("Error", "Please fill in all fields.")
             return
-
+        
+        if not isinstance(name, str) or not isinstance(animal_type, str):
+            messagebox.showerror("Error", "Invalid input. Please enter text on Name and Animal Type")
+            return
 
     
     def show_pet_information(self):
