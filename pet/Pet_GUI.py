@@ -7,7 +7,7 @@ class PetGUI:
         self.pet = pet
 
         self.master.title("Pet GUI")
-        self.master.geometry("300x200")
+        self.master.geometry("300x300")
         self.master.config(bg="#f0f0f0")
 
         #name label
