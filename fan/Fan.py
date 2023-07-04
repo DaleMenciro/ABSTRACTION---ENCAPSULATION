@@ -19,3 +19,20 @@ class Fan:
     SLOW = 1
     MEDIUM = 2
     FAST = 3
+
+    def __init__(self, speed=SLOW, radius= 5, color= 'blue', on=False):
+         """
+        Initializes a Fan object with the specified properties.
+
+        Arguments:
+            speed (int): The speed of the fan. Defaults to SLOW.
+            radius (float): The radius of the fan. Defaults to 5.
+            color (str): The color of the fan. Defaults to 'blue'.
+            on (bool): Whether the fan is turned on. Defaults to False.
+        """
+        self._speed = speed
+        self._on = on
+        self._radius = radius
+        self._color = color
+    
+        
