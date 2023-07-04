@@ -41,3 +41,6 @@ class PetGUI:
         self.age_entry.pack(pady=5)
 
         #submit button
+        self.submit_button = tk.Button(
+            
+        )
