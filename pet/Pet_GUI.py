@@ -48,7 +48,8 @@ class PetGUI:
             bg = "#66bb6a",
             fg = "white",
             activebackground= "#4caf50",
-            activeforeground= "white"
+            activeforeground= "white",
+            command= self.submit,
         )
         self.submit_button.pack(pady= 10)
 
