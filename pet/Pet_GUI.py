@@ -79,7 +79,9 @@ class PetGUI:
         self.pet.set_name(name)
         self.pet.set_animal_type(animal_type)
         self.pet.set_age(age)
-    
+
+        self.show_pet_information()
+        
     def show_pet_information(self):
         #get pet's info
         name = self.pet.get_name()
