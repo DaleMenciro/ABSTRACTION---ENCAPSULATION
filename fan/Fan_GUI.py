@@ -20,11 +20,23 @@ class FanGUI:
         self.status_label.pack()
 
     def set_speed(self, speed):
+        self.speed_scale.set(speed)
+
     
     def set_radius(self, radius):
+        self.radius_scale.set(radius)
     
     def set_color(self, color):
+        self.color_btn.configure(bg=color)
     
     def set_on(self, on):
+        if on:
+            self.on_off_btn.configure(text="Turn Off")
+            self.status_label.configure(text="Fan Status: On")
+        else:
+            self.on_off_btn.configure(text="Turn On")
+            self.status_label.configure(text="Fan Status: Off")
     
     def ask_color(self):
+        _, color = colorchooser.askcolor()
+        return color
