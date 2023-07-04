@@ -37,5 +37,7 @@ class PetGUI:
         self.age_label.pack()
 
         #age entry
+        self.age_entry = tk.Entry(self.master, font=("Arial", 12))
+        self.age_entry.pack(pady=5)
 
         #submit button
