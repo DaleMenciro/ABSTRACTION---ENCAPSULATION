@@ -63,3 +63,8 @@ class PetGUI:
                 self.pet.set_name(name)
                 self.pet.set_animal_type(animal_type)
                 self.pet.set.age(age)
+
+                #display pet's information
+                self.show_pet_information()
+
+            except:
