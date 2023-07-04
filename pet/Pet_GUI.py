@@ -58,4 +58,11 @@ class PetGUI:
             animal_type = self.animal_type_entry.get()
             age = self.age_entry.get()
 
+            try:
+                #Set pet's attributes
+
+                #Display pet's information
+
+                #Display error message for invalid input
+
         def show_info(self):
