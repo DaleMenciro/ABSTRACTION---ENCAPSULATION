@@ -59,6 +59,11 @@ class PetGUI:
         animal_type = self.animal_type_entry.get()
         age = self.age_entry.get()
 
+        #validate input
+        if not name or not animal_type or not age:
+            messagebox.showerror("Error", "Please fill in all fields.")
+            return
+
 
     
     def show_pet_information(self):
