@@ -65,6 +65,7 @@ class PetGUI:
                 self.pet.set.age(age)
 
                 #Display pet's information
+                information = f"Pet's name: {name} \nAnimal type: {animal_type} \nAge: {age}"
 
                 #Display error message for invalid input
             except:
