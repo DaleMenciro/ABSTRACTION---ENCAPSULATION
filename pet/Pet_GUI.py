@@ -66,5 +66,6 @@ class PetGUI:
 
                 #display pet's information
                 self.show_pet_information()
-
-            except:
+            except ValueError as e:
+                #display error message box if valid input
+                messagebox.showerror("Error!", str(e))
