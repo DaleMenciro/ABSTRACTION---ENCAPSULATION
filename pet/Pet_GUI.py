@@ -55,7 +55,7 @@ class PetGUI:
 
     def submit(self):
         #get the input values
-        name = self.name_enrty.get()
+        name = self.name_entry.get()
         animal_type = self.animal_type_entry.get()
         age = self.age_entry.get()
 
