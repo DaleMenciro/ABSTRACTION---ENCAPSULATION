@@ -44,7 +44,7 @@ class PetGUI:
         self.submit_button = tk.Button(
             self.master
             text = "Submit",
-            font= ("Arial", 12)
+            font= ("Arial", 12),
             bg = "#66bb6a",
             fg = "white",
             activebackground= "#4caf50",
@@ -63,16 +63,3 @@ class PetGUI:
                 self.pet.set_name(name)
                 self.pet.set_animal_type(animal_type)
                 self.pet.set.age(age)
-
-                #Display pet's information
-                information = f"Pet's name: {name} \nAnimal type: {animal_type} \nAge: {age}"
-
-                information_label = tk.Label(
-                    self.master, text= information, font=("Arial", 12), bg="#f0f0f0"
-                )
-                information_label.pack(pady= 10)
-
-                #Display error message for invalid input
-            except:
-
-        def show_info(self):
