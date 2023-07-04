@@ -71,7 +71,7 @@ class PetGUI:
             #display error message box if valid input
             messagebox.showerror("Error!", str(e))
     
-    def show_pet_information():
+    def show_pet_information(self):
         #get pet's info
         name = self.pet.get_name()
         animal_type = self.pet.get_animal_type()
