@@ -67,6 +67,11 @@ class PetGUI:
                 #Display pet's information
                 information = f"Pet's name: {name} \nAnimal type: {animal_type} \nAge: {age}"
 
+                information_label = tk.Label(
+                    self.master, text= information, font=("Arial", 12), bg="#f0f0f0"
+                )
+                information_label.pack(pady= 10)
+
                 #Display error message for invalid input
             except:
 
