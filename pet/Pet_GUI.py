@@ -73,6 +73,9 @@ class PetGUI:
         
         def show_pet_information():
             #get pet's info
+            name = self.pet.get_name()
+            animal_type = self.pet.get_animal_type()
+            age = self.pet.get_age()
             #create info display
             #pack and label
 
