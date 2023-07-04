@@ -72,7 +72,10 @@ class PetGUI:
                 messagebox.showerror("Error!", str(e))
         
         def show_pet_information():
-            
+            #get pet's info
+            #create info display
+            #pack and label
+
 
 def create_gui(pet):
     root = tk.Tk()
