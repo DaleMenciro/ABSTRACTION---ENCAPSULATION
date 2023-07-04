@@ -69,8 +69,12 @@ class PetGUI:
             return
         
         try:
-        
-        except
+            age = int(age)
+            if age <= 0:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("Error", "Invalid age. Please enter a positive integer.")
+        return
 
     
     def show_pet_information(self):
