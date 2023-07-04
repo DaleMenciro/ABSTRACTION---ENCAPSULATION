@@ -16,3 +16,6 @@ class Fan:
      get_color - gets fan's color
      set_color - sets fan's color
     '''
+    SLOW = 1
+    MEDIUM = 2
+    FAST = 3
