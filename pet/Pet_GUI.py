@@ -42,7 +42,7 @@ class PetGUI:
 
         #submit button
         self.submit_button = tk.Button(
-            self.master
+            self.master,
             text = "Submit",
             font= ("Arial", 12),
             bg = "#66bb6a",
