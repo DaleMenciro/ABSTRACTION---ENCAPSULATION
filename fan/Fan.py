@@ -30,9 +30,25 @@ class Fan:
             color (str): The color of the fan. Defaults to 'blue'.
             on (bool): Whether the fan is turned on. Defaults to False.
         """
-        self._speed = speed
-        self._on = on
-        self._radius = radius
-        self._color = color
+        self.__speed = speed
+        self.__on = on
+        self.__radius = radius
+        self.__color = color
     
+    def get_speed(self):
+    
+    def set_speed(self, speed):
+    
+    def is_on(self):
+    
+    def set_on(self, on):
+    
+    def get_radius(self):
+    
+    def set_radius(self, radius):
+    
+    def get_color(self):
+
+    def set_color(self, color):
+
         
