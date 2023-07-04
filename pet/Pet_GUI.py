@@ -70,6 +70,9 @@ class PetGUI:
             except ValueError as e:
                 #display error message box if valid input
                 messagebox.showerror("Error!", str(e))
+        
+        def show_pet_information():
+            
 
 def create_gui(pet):
     root = tk.Tk()
