@@ -17,9 +17,9 @@ class Pet: #class representing pet
     '''
     def __init__ (self):
         #initializing attributes
-        self __name= ""
-        self __animal_type = ""
-        self _age = 0
+        self.__name= ""
+        self.__animal_type = ""
+        self._age = 0
 
     def set_name (self, name):
         try:
