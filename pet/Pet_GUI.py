@@ -53,5 +53,9 @@ class PetGUI:
         self.submit_button.pack(pady= 10)
 
         def submit(self):
+            #get the input values
+            name = self.name_enrty.get()
+            animal_type = self.animal_type_entry.get()
+            age = self.age_entry.get()
 
         def show_info(self):
