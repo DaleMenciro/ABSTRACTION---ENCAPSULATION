@@ -76,8 +76,14 @@ class PetGUI:
             name = self.pet.get_name()
             animal_type = self.pet.get_animal_type()
             age = self.pet.get_age()
+
             #create info display
+            info = f"Pet's name: {name}\nAnimal type: {animal_type}\nAge: {age}"
             #pack and label
+            info_label = tk.Label(
+                self.master, text=info, font=("Arial", 12), bg="#f0f0f0"
+                )
+            info_label.pack(pady=10)
 
 
 def create_gui(pet):
