@@ -53,37 +53,37 @@ class PetGUI:
         )
         self.submit_button.pack(pady= 10)
 
-        def submit(self):
-            #get the input values
-            name = self.name_enrty.get()
-            animal_type = self.animal_type_entry.get()
-            age = self.age_entry.get()
+    def submit(self):
+        #get the input values
+        name = self.name_enrty.get()
+        animal_type = self.animal_type_entry.get()
+        age = self.age_entry.get()
 
-            try:
-                #Set pet's attributes
-                self.pet.set_name(name)
-                self.pet.set_animal_type(animal_type)
-                self.pet.set.age(age)
+        try:
+            #Set pet's attributes
+            self.pet.set_name(name)
+            self.pet.set_animal_type(animal_type)
+            self.pet.set.age(age)
 
-                #display pet's information
-                self.show_pet_information()
-            except ValueError as e:
-                #display error message box if valid input
-                messagebox.showerror("Error!", str(e))
-        
-        def show_pet_information():
-            #get pet's info
-            name = self.pet.get_name()
-            animal_type = self.pet.get_animal_type()
-            age = self.pet.get_age()
+            #display pet's information
+            self.show_pet_information()
+        except ValueError as e:
+            #display error message box if valid input
+            messagebox.showerror("Error!", str(e))
+    
+    def show_pet_information():
+        #get pet's info
+        name = self.pet.get_name()
+        animal_type = self.pet.get_animal_type()
+        age = self.pet.get_age()
 
-            #create info display
-            info = f"Pet's name: {name}\nAnimal type: {animal_type}\nAge: {age}"
-            #pack and label
-            info_label = tk.Label(
-                self.master, text=info, font=("Arial", 12), bg="#f0f0f0"
-                )
-            info_label.pack(pady=10)
+        #create info display
+        info = f"Pet's name: {name}\nAnimal type: {animal_type}\nAge: {age}"
+        #pack and label
+        info_label = tk.Label(
+            self.master, text=info, font=("Arial", 12), bg="#f0f0f0"
+            )
+        info_label.pack(pady=10)
 
 
 def create_gui(pet):
