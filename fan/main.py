@@ -10,5 +10,9 @@ class FanTest:
         self.fan2 = Fan(Fan.MEDIUM, 5, 'blue', False)
     
     def display_fan_properties(self,fan_gui,fan):
+        fan_gui.set_speed(fan.get_speed())
+        fan_gui.set_radius(fan.get_radius())
+        fan_gui.set_color(fan.get_color())
+        fan_gui.set_on(fan.is_on())
     
     def run_test(self): 
