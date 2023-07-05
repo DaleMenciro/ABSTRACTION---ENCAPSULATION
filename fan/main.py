@@ -17,5 +17,23 @@ class FanTest:
     
     def run_test(self):
         #Window for Fan 1
+        window1 = tk.Tk()
+        window1.title("Fan 1 Properties")
+        fan_gui1 = FanGUI(window1)
+        fan_control1 = FanControl(fan_gui1)
+        self.display_fan_properties(fan_gui1, self.fan1)
+        window1.geometry("300x300")
+        window1.configure(bg="#f2f2f2")
+        self.center_window(window1)
+        window1.mainloop()
 
         #Window For Fan 2
+        window2 = tk.Tk()
+        window2.title("Fan 2 Properties")
+        fan_gui2 = FanGUI(window2)
+        fan_control2 = FanControl(fan_gui2)
+        self.display_fan_properties(fan_gui2, self.fan2)
+        window2.geometry("300x300")
+        window2.configure(bg="#f2f2f2")
+        self.center_window(window2)
+        window2.mainloop()
