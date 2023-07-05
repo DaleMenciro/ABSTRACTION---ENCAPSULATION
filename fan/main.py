@@ -9,3 +9,6 @@ class FanTest:
         self.fan1 = Fan(Fan.FAST, 10, 'yellow', True)
         self.fan2 = Fan(Fan.MEDIUM, 5, 'blue', False)
     
+    def display_fan_properties(self,fan_gui,fan):
+    
+    def run_test(self):
