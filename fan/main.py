@@ -37,3 +37,5 @@ class FanTest:
         window2.configure(bg="#f2f2f2")
         self.center_window(window2)
         window2.mainloop()
+    
+    def center_window(self, window):
