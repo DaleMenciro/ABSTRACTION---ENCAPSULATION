@@ -18,9 +18,17 @@ class FanControl:
         self.fan_view.on_off_btn.config(command=self.toggle_fan)
 
     def change_speed(self, speed):
+        self.fan.set_speed(int(speed))
     
     def change_radius(self, radius):
+        self.fan.set_radius(int(radius))
     
     def change_color(self):
+        color = self.fan_gui.ask_color()
+        if color:
+            self.fan.set_color(color)
     
     def toggle_fan(self):
+        on = self.fan.is_on()
+        self.fan.set_on(not on)
+        self.fan_gui.set_on(self.fan.is_on())
