@@ -16,3 +16,11 @@ class FanControl:
         self.fan_view.radius_scale.config(command=self.change_radius)
         self.fan_view.color_btn.config(command=self.change_color)
         self.fan_view.on_off_btn.config(command=self.toggle_fan)
+
+    def change_speed(self, speed):
+    
+    def change_radius(self, radius):
+    
+    def change_color(self):
+    
+    def toggle_fan(self):
