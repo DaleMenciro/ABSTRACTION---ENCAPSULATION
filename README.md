@@ -48,7 +48,8 @@ The Pet class includes the following methods:
     set_animal_type(): Assigns a value to the __animal_type attribute.
     set_age(): Assigns a value to the __age attribute.
     get_name(): Returns the value of the __name attribute.
-    `get_animal_type()
+    get_animal_type()(): Returns the value of the __animal_type attribute.
+    get_age(): Returns the value of the __age attribute.
 
 To test the Pet class, run the main program. It creates an object of the Pet class and prompts the user to enter the name, type, and age of their pet. The entered data is stored as attributes of the object. The program then uses the accessor methods to retrieve the pet's name, type, and age, and displays this data on the screen.
 
