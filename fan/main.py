@@ -45,3 +45,6 @@ class FanTest:
         x = (window.winfo_screenwidth() // 2) - (width // 2)
         y = (window.winfo_screenheight() // 2) - (height // 2)
         window.geometry('{}x{}+{}+{}'.format(width, height, x, y))
+
+test = FanTest()
+test.run_test()
