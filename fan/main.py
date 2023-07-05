@@ -15,4 +15,7 @@ class FanTest:
         fan_gui.set_color(fan.get_color())
         fan_gui.set_on(fan.is_on())
     
-    def run_test(self): 
+    def run_test(self):
+        #Window for Fan 1
+
+        #Window For Fan 2
