@@ -11,4 +11,4 @@ class FanTest:
     
     def display_fan_properties(self,fan_gui,fan):
     
-    def run_test(self):
+    def run_test(self): 
